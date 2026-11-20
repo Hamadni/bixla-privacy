@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bixla — سياسة الخصوصية | Privacy Policy</title>
+<meta name="description" content="سياسة الخصوصية لتطبيق Bixla — Privacy policy for the Bixla app.">
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #5c5c5c;
+    --line: #e2e2e2;
+    --accent: #c9402c;
+    --card: #f6f6f6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e0e;
+      --fg: #ececec;
+      --muted: #a3a3a3;
+      --line: #2a2a2a;
+      --accent: #e0503c;
+      --card: #181818;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Naskh Arabic", "Noto Sans Arabic", Tahoma, Arial, sans-serif;
+    line-height: 1.8;
+    font-size: 17px;
+  }
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 24px 16px 64px;
+  }
+  header.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 8px;
+  }
+  .brand { font-weight: 700; font-size: 20px; letter-spacing: .2px; }
+  .brand span { color: var(--accent); }
+  .lang {
+    display: inline-flex;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    overflow: hidden;
+  }
+  .lang button {
+    appearance: none;
+    border: 0;
+    background: transparent;
+    color: var(--fg);
+    font: inherit;
+    font-size: 15px;
+    padding: 6px 16px;
+    cursor: pointer;
+  }
+  .lang button[aria-pressed="true"] {
+    background: var(--accent);
+    color: #fff;
+  }
+  h1 { font-size: 28px; line-height: 1.3; margin: 20px 0 6px; }
+  h2 { font-size: 21px; margin: 36px 0 8px; padding-top: 4px; }
+  p, li { margin: 0 0 12px; }
+  ul { padding-inline-start: 22px; margin: 0 0 12px; }
+  .updated { color: var(--muted); font-size: 15px; margin-bottom: 20px; }
+  .summary {
+    background: var(--card);
+    border-inline-start: 4px solid var(--accent);
+    padding: 12px 16px;
+    border-radius: 6px;
+    margin: 16px 0 8px;
+  }
+  .table-wrap { overflow-x: auto; margin: 8px 0 16px; }
+  table { border-collapse: collapse; width: 100%; font-size: 15.5px; }
+  th, td { border: 1px solid var(--line); padding: 8px 10px; vertical-align: top; text-align: start; overflow-wrap: anywhere; }
+  @media (max-width: 520px) {
+    table { font-size: 14px; }
+    th, td { padding: 6px 7px; }
+  }
+  th { background: var(--card); font-weight: 600; }
+  a { color: var(--accent); }
+  footer { margin-top: 40px; color: var(--muted); font-size: 14px; border-top: 1px solid var(--line); padding-top: 16px; }
+  [data-lang] { display: none; }
+  html[data-active="ar"] [data-lang="ar"],
+  html[data-active="en"] [data-lang="en"] { display: block; }
+  html[data-active="en"] { direction: ltr; }
+  html[data-active="ar"] [data-lang="ar"].inline,
+  html[data-active="en"] [data-lang="en"].inline { display: inline; }
+</style>
+</head>
+<body>
+<main>
+  <header class="top">
+    <div class="brand">Bix<span>la</span></div>
+    <div class="lang" role="group" aria-label="Language / اللغة">
+      <button type="button" id="btn-ar" aria-pressed="true">العربية</button>
+      <button type="button" id="btn-en" aria-pressed="false">English</button>
+    </div>
+  </header>
+
+  <!-- ===================== ARABIC ===================== -->
+  <div data-lang="ar" lang="ar" dir="rtl">
+    <h1>سياسة الخصوصية</h1>
+    <p class="updated">آخر تحديث: 20 نوفمبر 2026</p>
+
+    <p>Bixla تطبيق مجاني لتتبّع مكتبة ألعابك على iOS وAndroid. هذه السياسة توضّح ما نجمعه عنك، ولماذا، ومع من نشاركه، وكيف تحذفه.</p>
+    <div class="summary">باختصار: نجمع الحد الأدنى اللازم لعمل التطبيق، ولا نبيع بياناتك، ولا نعرض إعلانات، ولا نستخدم أدوات تتبّع سلوكي.</div>
+
+    <h2>البيانات التي نجمعها</h2>
+    <p>نجمع فقط ما يلزم لتشغيل حسابك ومكتبتك:</p>
+    <div class="table-wrap">
+    <table>
+      <thead><tr><th>البيان</th><th>لماذا</th><th>ماذا يحدث له</th></tr></thead>
+      <tbody>
+        <tr><td>الإيميل وكلمة المرور</td><td>تسجيل الدخول واستعادة الحساب</td><td>يديرها Supabase Auth، ولا نرى كلمة المرور أبداً</td></tr>
+        <tr><td>اسم المستخدم</td><td>هويتك داخل التطبيق</td><td>يُحفظ مع حسابك</td></tr>
+        <tr><td>مكتبتك</td><td>حفظ ألعابك وحالتها (ألعبها، أنهيتها، أمنيات، متوقفة) وتقييماتك وتواريخها وساعاتك وملاحظاتك</td><td>تُحفظ في قاعدة بيانات Supabase مرتبطة بحسابك</td></tr>
+        <tr><td>صورة الملف الشخصي (اختيارية)</td><td>عرضها في بروفايلك</td><td>تُحفظ كملف صورة واحد في تخزين Supabase، مربوط بحسابك</td></tr>
+        <tr><td>أيام نشاطك بالتطبيق وترتيب انضمامك وشاراتك</td><td>إحصاءات وشارات ملفك</td><td>تُحفظ مع حسابك في Supabase</td></tr>
+        <tr><td>لقطات شاشة الاستيراد (اختيارية)</td><td>قراءة أسماء الألعاب منها فقط</td><td>تُرسل لخدمة ذكاء اصطناعي (انظر قسم الجهات الخارجية)، ولا تُحفظ عندنا</td></tr>
+        <tr><td>بيانات الأعطال</td><td>إصلاح الأخطاء</td><td>مجهّلة الهوية ولا تحمل اسمك أو إيميلك</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p>ما لا نجمعه: موقعك، جهات اتصالك، معرّف الإعلانات، أو أي بيانات تتبّع سلوكي لأغراض تسويقية.</p>
+    <p>كما يحفظ جهازك محلياً إعدادات بسيطة (الوضع الفاتح أو الغامق، موافقتك على استيراد اللقطات)، ولا تُرسل لأي جهة.</p>
+
+    <h2>كيف نستخدم البيانات</h2>
+    <p>نستخدم بياناتك لغرضين فقط:</p>
+    <ul>
+      <li>تشغيل التطبيق: تسجيل دخولك، وعرض مكتبتك وإحصاءاتها، ومزامنة ألعابك عبر أجهزتك.</li>
+      <li>تحسين التطبيق: إصلاح الأخطاء من بيانات الأعطال المجهّلة.</li>
+    </ul>
+    <p>لا نبيع بياناتك، ولا نشاركها لأغراض إعلانية، ولا نستخدمها لبناء ملف تسويقي عنك. التطبيق مجاني بلا إعلانات ولا اشتراكات ولا مشتريات داخله.</p>
+
+    <h2>الجهات الخارجية التي نستخدمها</h2>
+    <p>نستخدم خدمات طرف ثالث لتشغيل التطبيق. كل جهة تستلم المطلوب منها فقط:</p>
+    <div class="table-wrap">
+    <table>
+      <thead><tr><th>الجهة</th><th>ماذا تستلم</th><th>الغرض</th></tr></thead>
+      <tbody>
+        <tr><td>Supabase</td><td>بيانات حسابك ومكتبتك وصورة ملفك</td><td>استضافة الحساب وقاعدة البيانات والتخزين</td></tr>
+        <tr><td>IGDB (تابعة لـTwitch) وRAWG وSteamGridDB</td><td>أسماء الألعاب التي تبحث عنها فقط، عبر خادمنا وليس من جهازك مباشرة، بدون هويتك</td><td>أغلفة الألعاب وتواريخ الإصدار والأنواع ومدد اللعب التقديرية</td></tr>
+        <tr><td>GamerPower</td><td>لا شيء عنك، نقرأ قائمة العروض العامة فقط</td><td>قسم الألعاب المجانية</td></tr>
+        <tr><td>Sentry</td><td>تقارير أعطال مجهّلة، بدون اسم أو إيميل أو عنوان IP تلقائي</td><td>معرفة الأعطال وإصلاحها</td></tr>
+        <tr><td>Anthropic (Claude)</td><td>لقطات الشاشة التي تختارها فقط عند استيراد مكتبتك</td><td>قراءة أسماء الألعاب من الصور</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p><strong>استيراد المكتبة من لقطات الشاشة.</strong> عند اختيارك هذه الميزة، تُرسل الصور إلى خدمة ذكاء اصطناعي (Anthropic) لقراءة أسماء الألعاب فقط. لا نحفظ الصور في تطبيقنا أو قاعدة بياناتنا، وقد تحتفظ بها الجهة المزوّدة لفترة محدودة (حتى 30 يوماً). نطلب موافقتك قبل أول استخدام، وتقدر ألا تستخدم الميزة أصلاً.</p>
+    <p><strong>المستخدمون الآخرون.</strong> لا يعرض التطبيق حالياً بياناتك لأي مستخدم آخر. إذا أضفنا لاحقاً ميزات اجتماعية، سنخبرك ونحدّث هذه السياسة قبل أن تُفعَّل.</p>
+
+    <h2>الاحتفاظ بالبيانات وحذف الحساب</h2>
+    <p>تبقى بياناتك ما دام حسابك موجوداً. تقدر تحذف حسابك نهائياً بنفسك من الإعدادات باختيار «حذف حسابي نهائياً»، ويُحذف عندها:</p>
+    <ul>
+      <li>بيانات الحساب (الإيميل وتسجيل الدخول).</li>
+      <li>ملفك الشخصي ومكتبتك وكل ما ربطته بحسابك.</li>
+      <li>صورة ملفك الشخصي من التخزين.</li>
+    </ul>
+    <p>المتبقي بعد الحذف هو بيانات لا تخصّك: مخزن مؤقت مشترك لبيانات الألعاب (أغلفة وتواريخ إصدار)، وتقارير أعطال مجهّلة لدى Sentry حسب مدة احتفاظها المعتادة.</p>
+
+    <h2>حقوقك والتواصل</h2>
+    <p>تقدر تطلب نسخة من بياناتك، أو تصحيحها، أو حذفها في أي وقت. الحذف متاح مباشرة من التطبيق (الإعدادات ← حذف حسابي نهائياً)، وللبقية تواصل معنا.</p>
+    <ul>
+      <li><strong>النسخة الاحتياطية:</strong> تقدر تصدّر مكتبتك من الإعدادات ← نسخة احتياطية.</li>
+      <li><strong>الأطفال:</strong> التطبيق غير موجّه للأطفال دون 13 سنة، ولا نجمع بياناتهم عن قصد.</li>
+      <li><strong>التغييرات:</strong> لو عدّلنا هذه السياسة نغيّر تاريخ آخر تحديث في أعلاها، ونعلمك عند أي تغيير جوهري.</li>
+      <li><strong>التواصل:</strong> <a href="mailto:mybixlaapp@gmail.com">mybixlaapp@gmail.com</a></li>
+    </ul>
+  </div>
+
+  <!-- ===================== ENGLISH ===================== -->
+  <div data-lang="en" lang="en" dir="ltr">
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: 20 November 2026</p>
+
+    <p>Bixla is a free app for tracking your video game library on iOS and Android. This policy explains what we collect, why, who we share it with, and how you can delete it.</p>
+    <div class="summary">In short: we collect the minimum needed to run the app, we do not sell your data, we show no ads, and we use no behavioral tracking tools.</div>
+
+    <h2>What we collect</h2>
+    <ul>
+      <li><strong>Account:</strong> your email and a password, handled by Supabase Auth. We never see your password.</li>
+      <li><strong>Username:</strong> your identity inside the app, stored with your account.</li>
+      <li><strong>Your library:</strong> the games you add, their status (playing, finished, wishlist, stopped), ratings, dates, hours and notes. Stored in our Supabase database, tied to your account.</li>
+      <li><strong>Profile photo (optional):</strong> stored as one image file in Supabase Storage.</li>
+      <li><strong>Activity and badges:</strong> the days you used the app, your join order and your badges, stored with your account.</li>
+      <li><strong>Screenshots for library import (optional):</strong> the images you choose are sent to an AI service (Anthropic) only to read game titles. We do not store them in our app or database; the provider may keep them for a limited period (up to 30 days). We ask for your consent before first use.</li>
+      <li><strong>Crash reports:</strong> anonymous reports via Sentry, with no name, email or automatic IP address.</li>
+    </ul>
+    <p>We do not collect your location, contacts, advertising ID or any behavioral tracking data. Your device also stores a few simple settings locally (light or dark mode, your consent for screenshot import); these are not sent to anyone.</p>
+
+    <h2>How we use it</h2>
+    <p>To run the app (sign-in, your library and stats, syncing across your devices) and to fix bugs. We do not sell or share your data for advertising. The app is free, with no ads, subscriptions or in-app purchases.</p>
+
+    <h2>Third-party services</h2>
+    <ul>
+      <li><strong>Supabase:</strong> hosts the account, database and storage.</li>
+      <li><strong>IGDB (a Twitch service), RAWG and SteamGridDB:</strong> receive only the game titles you search for, through our server and without your identity, to return covers, release dates, genres and estimated play time.</li>
+      <li><strong>GamerPower:</strong> we read its public list of free-game offers; nothing about you is sent.</li>
+      <li><strong>Sentry:</strong> anonymous crash reports.</li>
+      <li><strong>Anthropic (Claude):</strong> processes screenshots you choose for library import, as described above.</li>
+    </ul>
+
+    <h2>Other users</h2>
+    <p>The app does not currently show your data to any other user. If we add social features later, we will tell you and update this policy before they are enabled.</p>
+
+    <h2>Retention and deletion</h2>
+    <p>Your data stays while your account exists. You can permanently delete your account from Settings ("Delete my account permanently"), which removes your account data, profile, library and profile photo. What remains is not about you: a shared cache of game data (covers, release dates) and anonymous crash reports kept by Sentry for its standard retention period.</p>
+
+    <h2>Your rights and contact</h2>
+    <p>You can ask for a copy of your data, correction or deletion at any time. Deletion is available in the app; for anything else contact <a href="mailto:mybixlaapp@gmail.com">mybixlaapp@gmail.com</a>. You can export your library from Settings → Backup. The app is not directed to children under 13 and we do not knowingly collect their data. If we change this policy we will update the date above and notify you of any material change.</p>
+  </div>
+
+  <footer>
+    <span data-lang="ar" class="inline">Bixla — جميع الحقوق محفوظة.</span>
+    <span data-lang="en" class="inline">Bixla — all rights reserved.</span>
+  </footer>
+</main>
+
+<script>
+(function () {
+  var root = document.documentElement;
+  var btnAr = document.getElementById("btn-ar");
+  var btnEn = document.getElementById("btn-en");
+
+  function apply(lang) {
+    root.setAttribute("data-active", lang);
+    root.setAttribute("lang", lang);
+    root.setAttribute("dir", lang === "ar" ? "rtl" : "ltr");
+    btnAr.setAttribute("aria-pressed", lang === "ar" ? "true" : "false");
+    btnEn.setAttribute("aria-pressed", lang === "en" ? "true" : "false");
+    document.title = lang === "ar" ? "Bixla — سياسة الخصوصية" : "Bixla — Privacy Policy";
+    try { localStorage.setItem("bixla-privacy-lang", lang); } catch (e) {}
+  }
+
+  var initial = "ar";
+  try {
+    var saved = localStorage.getItem("bixla-privacy-lang");
+    if (saved === "ar" || saved === "en") initial = saved;
+    else if (/^en/i.test(navigator.language || "")) initial = "en";
+  } catch (e) {}
+
+  if (location.hash === "#en") initial = "en";
+  if (location.hash === "#ar") initial = "ar";
+
+  btnAr.addEventListener("click", function () { apply("ar"); });
+  btnEn.addEventListener("click", function () { apply("en"); });
+  apply(initial);
+})();
+</script>
+</body>
+</html>
